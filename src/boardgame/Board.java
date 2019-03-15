@@ -2,9 +2,11 @@ package boardgame;
 
 public class Board {
 	
+	// Classe Board da BoardLayer, contendo linhas e colunas do tabuleiro
+	
 	private int rows;
 	private int columns;
-	private Piece[][] pieces;
+	private Piece[][] pieces; // Matriz de peças
 	
 	public Board(int rows, int columns) {
 		if(rows < 1 || columns < 1) {
@@ -46,6 +48,7 @@ public class Board {
 		piece.position = position;
 	}
 	
+	// Método para remover peças
 	public Piece removePiece(Position position) {
 		if(!positionExists(position)) {
 			throw new BoardException("Position not on the board");
@@ -59,11 +62,12 @@ public class Board {
 		return aux;
 	}
 	
-	private boolean positionExists(int row, int column) { // para ver se uma posição existe
+	// Método para chequa se uma posição existe ou não(dentro da matriz de xadrez 8x8)
+	private boolean positionExists(int row, int column) { 
 		return row >= 0 && row < rows && column >=0 && column < columns;
 	}
 	
-	public boolean positionExists(Position position) { //
+	public boolean positionExists(Position position) { 
 		return positionExists(position.getRow(), position.getColumn());
 	}
 	

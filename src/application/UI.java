@@ -36,6 +36,7 @@ public class UI {
 		System.out.flush();
 	}
 	
+	// -- Método para ler(escrever)a posição da peça no tabuleiro --
 	public static ChessPosition readChessPosition(Scanner sc) {
 		try {
 		String s = sc.nextLine();
@@ -47,7 +48,9 @@ public class UI {
 		throw new InputMismatchException("Error reading ChessPosition. Valid values are from a1 to h8");
 	}
 }
+	// -- // --	
 	
+	// -- Imprimie a linha(numeros) e colunas(letras) do tabuleiro
 	public static void printBoard(ChessPiece[][] pieces) {
 		for (int i = 0; i < pieces.length; i++) {
 			System.out.print((8 - i) + " ");
@@ -57,9 +60,10 @@ public class UI {
 			}
 			System.out.println();
 		}
-		System.out.println("  a b c d e f g h");
+		System.out.println("  a b c d e f g h");		
+		// -- // --	
 	}
-
+	// -- Imprimie áreas vagas ou com peças no tabuleiro --
 	private static void printPiece(ChessPiece piece) {
     	if (piece == null) {
             System.out.print("-");
@@ -72,6 +76,7 @@ public class UI {
                 System.out.print(ANSI_YELLOW + piece + ANSI_RESET);
             }
         }
-        System.out.print(" ");
+        System.out.print(" ");              
 	}
+	// -- // --
 }
