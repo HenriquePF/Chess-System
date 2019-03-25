@@ -66,8 +66,8 @@ public class UI {
 			}
 		}
 		else {
-			System.out.println("CHECKMATE!");
-			System.out.println("Winner: " + chessMatch.getCurrentPlayer());
+			System.out.println(ANSI_WHITE_BACKGROUND + ANSI_RED + "CHECKMATE!" + ANSI_RESET);
+			System.out.println(ANSI_WHITE_BACKGROUND + ANSI_BLUE + "Winner: " + chessMatch.getCurrentPlayer() + ANSI_RESET);
 		}
 		
 	}
