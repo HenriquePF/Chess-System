@@ -1,44 +1,24 @@
 
-#### Position Class
-**OOP Topics:**
+#### Chess System
 
-1. Encapsulation;
-2. Constructors;
-3. ToString(Object/Overriding)
+A chess game made to put together everything i have been learning on JAVA(OOP). Made to run on git terminal.
 
 **--------------------------------------------------**
 
-#### Board and Piece
-**OOP Topics:**
+#### Topics
 
-1. Associations;
-2. Encapsulation/Access Modifiers;
+In this project i implemented:
 
-**Data Structure Topics:**
-1. Matrix;
-
-**--------------------------------------------------**
-
-#### Chess layer and printed board
-**OOP Topics:**
 1. Enumerations;
-2. Encapsulation/Access Modifiers;
+2. Encapsulation / Access Modifiers;
 3. Inheritance;
 4. Downcasting;
-5. Static Members;
-6. Layers Pattern;
-
-**Data Structure Topics:**
-1. Matrix;
+5. Static members;
+6. Layers pattern;
+7. Polymophirsm;
+8. Lists, matrices, 
+9. Collect(), filter();
 
 **--------------------------------------------------**
 
-#### BoardException and defensive programming
-**OOP Topics:**
-1. Exceptions;
-2. Constructors;
-
-**Checklist:**
-1. Class BoardException[public];
-2. Methods: Board.PositionExists, Board.ThereIsAPiece;
-3. Implement defensive programming in Board methods;
+Again, this is just a simple projecto to put to use everything i have been learning in JAVA.
